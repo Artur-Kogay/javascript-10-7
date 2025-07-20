@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+button {
+    border: none;
+    background-color: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+}
+
+.cards_card {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid rgb(128, 110, 207);
+    transition: 0.5s;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cards_card:hover {
+    background-color: rgb(87, 196, 107);
+    border: 6px solid rgb(105, 17, 17);
+}
+
+.main-repositories_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid rgb(135, 238, 126);
+}
+
+.main-repositories_card:first-child div {
+    background-color: rgb(80, 128, 219);
+    padding: 5px;
+}
+
+.main-repositories_card div{
+    border: 1px solid rgb(135, 238, 126);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.delete-btn {
+    width: 150px;
+    height: 60px;
+    background-color: rgb(191, 14, 14);
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.delete-btn:hover {
+    background-color: rgb(205, 31, 31);
+}
+
+.delete-btn:active {
+    background-color: rgb(231, 32, 32);
+}
+
+input {
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid purple;
+    transition: 0.5s;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input:focus {
+    border: 2px solid rgb(92, 13, 156);
+}
+
+
+
+main {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.main-repositories {
+    margin-top: 30px;
+}
+
+
