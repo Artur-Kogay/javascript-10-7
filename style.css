@@ -51,15 +51,28 @@ header {
     border: 6px solid rgb(105, 17, 17);
 }
 
-.main-repositories_card {
+.main-repositories_card-info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border: 1px solid rgb(135, 238, 126);
 }
 
-.main-repositories_card:first-child div {
+.main-repositories_card-info div {
     background-color: rgb(80, 128, 219);
     padding: 5px;
+    border: 1px solid rgb(135, 238, 126);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+
+.main-repositories_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid rgb(135, 238, 126);
 }
 
 .main-repositories_card div{
@@ -69,6 +82,8 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 24px;
+    word-break: break-word;
+    text-align: center;
 }
 
 .delete-btn {

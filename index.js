@@ -1,6 +1,6 @@
 const searchInput = document.getElementById('search-input');
 const searchCardList = document.querySelector('.cards');
-const listRepositories = document.querySelector('.main-repositories');
+const listRepositories = document.querySelector('.main-repositories_cards');
 
 const URL = 'https://api.github.com/search/repositories?q=';
 
@@ -77,6 +77,8 @@ const renderSearchRepositories = (data) => {
 searchInput.addEventListener('input', debouncedSearch)
 
 const renderRepositories = () => {
+
+    listRepositories.innerHTML = '';
 
     if(!repositories.length) {
         return;
